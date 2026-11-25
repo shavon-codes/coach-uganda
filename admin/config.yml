@@ -2,7 +2,8 @@ backend:
   name: github
   repo: shavon-codes/coach-uganda
   branch: main
-  base_url: https://api.netlify.com # Temporary placeholder, we will change this in the next step
+  base_url: https://coach-uganda-auth.sirgeorgewilliam4.workers.dev
+  auth_endpoint: /auth
 
 publish_mode: editorial_workflow
 
