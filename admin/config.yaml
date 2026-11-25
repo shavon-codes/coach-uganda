@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: shavon-codes/coach-uganda
+  branch: main
+  base_url: https://coach-uganda-auth.sirgeorgewilliam4.workers.dev
+  auth_endpoint: /auth
+
+publish_mode: editorial_workflow
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    fields:
+      - { label: "Article Title", name: "title", widget: "string" }
+      - { label: "Article Content", name: "body", widget: "markdown" }
+      - { label: "Category", name: "category", widget: "select", options: ["Fitness & Training", "Nutrition", "Mindset", "News"] }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "SEO Description", name: "description", widget: "text" }
